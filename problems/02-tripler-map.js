@@ -5,16 +5,18 @@ array.
 
 Solve this using Array's `map()` method.
 
-Examples: 
+Examples:
 
 console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
 console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 */
 
 let tripler = function(nums) {
-    // Your code here 
+    // Your code here
+    const newArr = nums.map((x)=> x*3);
+    return newArr;
 };
-
+//console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
