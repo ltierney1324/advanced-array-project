@@ -16,7 +16,15 @@ console.log(productWithReduce([4, 3])); // 12
 */
 
 let productWithReduce = function(nums) {
-    // Your code here 
+    // Your code here
+    const i =1;
+    /*const total = nums.reduce(function(acc, curVal) {
+      return acc * curVal;
+    }, i);*/
+
+    const total = nums.reduce((acc, curVal)=> acc*curVal, i);
+    return total;
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
