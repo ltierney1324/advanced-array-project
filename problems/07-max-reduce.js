@@ -19,13 +19,22 @@ let maxWithReduce = function(nums) {
   // const highestNum = nums.reduce((getMax)=>  getMax);
   // return highestNum;
 
-  let max = nums.reduce(function(acc, el) {
+  /*let max = nums.reduce(function(acc, el) {
     if (el > acc) {
       return el;
     } else {
       return acc;
     }
 
+  });
+  return max;*/
+
+  const max = nums.reduce((acc, el)=>{
+    if(el > acc){
+      return el;
+    }else{
+      return acc;
+    }
   });
   return max;
 };
